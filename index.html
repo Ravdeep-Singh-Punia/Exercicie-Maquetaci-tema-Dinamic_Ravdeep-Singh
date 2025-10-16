@@ -1,1 +1,94 @@
-h
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Theme Switcher</title>
+    <link id="theme-link" rel="stylesheet" href="/src/scss/theme-default.scss"> <!-- Enllaça al CSS compilat -->
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5">
+        <div class="container">
+            <a class="navbar-brand text-primary" href="#">Projecte 2DAW</a>
+        </div>
+    </nav>
+    
+    <div class="container py-3">
+        
+        <div class="d-flex align-items-center mb-5">
+            <label for="theme-selector" class="form-label me-3 mb-0 fw-bold">Tria un Tema:</label>
+            <select id="theme-selector" class="form-select w-auto">
+                <option value="default">Default (Blau Base)</option>
+                <option value="dark">Fosc (Lila)</option>
+                <option value="light">Clar (Verd Suaus)</option> 
+            </select>
+        </div>
+        
+        <h1 class="mb-4 text-primary border-bottom pb-2">Galeria i Contacte T   ematitzat</h1>
+        
+        <h2 class="mt-5 mb-3">Galeria Responsiva</h2>
+        <div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5" id="image-gallery">
+            <div class="col"><img src="https://placehold.co/600x400?text=Imatge+1" class="img-fluid rounded shadow-sm" alt="Galeria 1"></div>
+            <div class="col"><img src="https://placehold.co/600x400?text=Imatge+2" class="img-fluid rounded shadow-sm" alt="Galeria 2"></div>
+            <div class="col"><img src="https://placehold.co/600x400?text=Imatge+3" class="img-fluid rounded shadow-sm" alt="Galeria 3"></div>
+            <div class="col"><img src="https://placehold.co/600x400?text=Imatge+4" class="img-fluid rounded shadow-sm" alt="Galeria 4"></div>
+            <div class="col"><img src="https://placehold.co/600x400?text=Imatge+5" class="img-fluid rounded shadow-sm" alt="Galeria 5"></div>
+            <div class="col"><img src="https://placehold.co/600x400?text=Imatge+6" class="img-fluid rounded shadow-sm" alt="Galeria 6"></div>
+            <div class="col"><img src="https://placehold.co/600x400?text=Imatge+7" class="img-fluid rounded shadow-sm" alt="Galeria 7"></div>
+            <div class="col"><img src="https://placehold.co/600x400?text=Imatge+8" class="img-fluid rounded shadow-sm" alt="Galeria 8"></div>
+            <div class="col"><img src="https://placehold.co/600x400?text=Imatge+9" class="img-fluid rounded shadow-sm" alt="Galeria 9"></div>
+            <div class="col"><img src="https://placehold.co/600x400?text=Imatge+10" class="img-fluid rounded shadow-sm" alt="Galeria 10"></div>
+            <div class="col"><img src="https://placehold.co/600x400?text=Imatge+11" class="img-fluid rounded shadow-sm" alt="Galeria 11"></div>
+            <div class="col"><img src="https://placehold.co/600x400?text=Imatge+12" class="img-fluid rounded shadow-sm" alt="Galeria 12"></div>
+            <div class="col"><img src="https://placehold.co/600x400?text=Imatge+13" class="img-fluid rounded shadow-sm" alt="Galeria 13"></div>
+            <div class="col"><img src="https://placehold.co/600x400?text=Imatge+14" class="img-fluid rounded shadow-sm" alt="Galeria 14"></div>
+            <div class="col"><img src="https://placehold.co/600x400?text=Imatge+15" class="img-fluid rounded shadow-sm" alt="Galeria 15"></div>
+            <div class="col"><img src="https://placehold.co/600x400?text=Imatge+16" class="img-fluid rounded shadow-sm" alt="Galeria 16"></div>
+            <div class="col"><img src="https://placehold.co/600x400?text=Imatge+17" class="img-fluid rounded shadow-sm" alt="Galeria 17"></div>
+            <div class="col"><img src="https://placehold.co/600x400?text=Imatge+18" class="img-fluid rounded shadow-sm" alt="Galeria 18"></div>
+            <div class="col"><img src="https://placehold.co/600x400?text=Imatge+19" class="img-fluid rounded shadow-sm" alt="Galeria 19"></div>
+            <div class="col"><img src="https://placehold.co/600x400?text=Imatge+20" class="img-fluid rounded shadow-sm" alt="Galeria 20"></div>
+        </div>
+        
+        <h2 class="mt-5 mb-3">Formulari de Contacte</h2>
+        <form>
+            <div class="mb-3">
+                <label for="fullName" class="form-label">Nom Complet</label>
+                <input type="text" class="form-control" id="fullName" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Missatge</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="acceptance" required>
+                <label class="form-check-label" for="acceptance">Acepto les condicions</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        
+        <h2 class="mt-5 mb-3">Comprovació de Temes</h2>
+        <div class="card mb-3">
+            <div class="card-header bg-secondary">Capçalera de la Targeta</div>
+            <div class="card-body">
+                <p>Aquesta és una targeta de prova.</p>
+            </div>
+        </div>
+        <div class="alert alert-success mb-3" role="alert">
+            Això és una alerta d'èxit!
+        </div>
+        <div class="alert alert-danger" role="alert">
+            Això és una alerta de perill!
+        </div>
+        <button class="btn btn-secondary">Botó Secundari</button>
+        
+    </div>
+    
+    <script type="module" src="/src/js/theme-switcher.js"></script>
+</body>
+</html>

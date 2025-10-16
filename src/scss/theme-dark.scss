@@ -1,0 +1,11 @@
+$primary: #6f42c1;  // Lila
+$body-bg: #212529;
+$body-color: #f8f9fa;
+$secondary: #495057;
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+$grid-columns: 12;  
+@import "bootstrap/scss/bootstrap";
